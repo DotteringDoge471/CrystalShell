@@ -24,6 +24,73 @@ Inspired by [Aylur/astal](https://github.com/Aylur/astal), CrystalShell also pro
 - 🔗 **Astal Integration**  
   We provide C#/JavaScript bindings for **libastal**, allowing you to integrate its libraries and services directly—ideal for filling in features not yet implemented in CrystalShell.
 
----
+## Supported Desktops
 
-Looking to build your own Linux desktop shell? CrystalShell gives you the tools to do it your way.
+**CrystalShell** only works on **Wayland**, and specifically on Wayland compositors that support the **Layer Shell** protocol.
+
+### ✅ Supported Compositors
+
+- **wlroots-based compositors**  
+  e.g. [Sway](https://swaywm.org/), Hyprland, Wayfire
+
+- **Smithay-based compositors**  
+  e.g. [COSMIC](https://github.com/pop-os/cosmic)
+
+- **Mir-based compositors**  
+  Some may not enable the protocol by default. You can enable it using:  
+  `--add-wayland-extension zwlr_layer_shell_v1`
+
+- **KDE Plasma on Wayland**
+
+### ❌ Not Supported
+
+- **GNOME on Wayland** (does not implement Layer Shell)
+- **Any X11-based desktop environment**
+
+## Libraries and Services
+
+CrystalShell provides a wide range of services and bindings for building fully functional desktop shells. All modules support both **C#** and **JavaScript** unless otherwise noted.
+
+### 🧩 Core Libraries
+
+- **Hyprland Bindings** – Integrate with Hyprland compositor (C#/JavaScript)
+- **Wayfire Config Manager** – Manage Wayfire configuration files (C#/JavaScript)
+- **DBus Library** – High-level DBus bindings (C#/JavaScript)
+- **Astal4 Compatibility Layer** – Use Astal libraries in CrystalShell (C#/JavaScript)
+- **SocketIO Library** – Real-time communication via Socket.IO (C#/JavaScript)
+- **Cryptography Library** – Hashing, encryption, and secure storage (C#/JavaScript)
+- **MonoPosix Bindings** – Access POSIX-level APIs (C#/JavaScript)
+
+### 🧱 Shell & System Services
+
+- **SystemTray Service** – System tray icon and status support (C#/JavaScript)
+- **Greetd Service** – Integration with greetd-based display managers (C#/JavaScript)
+- **Notifications Service** – Notification handling and display (C#/JavaScript)
+- **Applications Service** – Application discovery and launching (C#/JavaScript)
+- **Battery Service** – Battery status and power monitoring (C#/JavaScript)
+- **Bluetooth Service** – Manage Bluetooth devices and state (C#/JavaScript)
+- **Network Service** – Monitor and control networking (C#/JavaScript)
+- **NetIOService** – Lightweight embedded HTTP server (C#/JavaScript)
+- **PamService** – Pluggable authentication module integration (C#/JavaScript)
+- **MPRIS Service** – Media control via MPRIS (C#/JavaScript)
+- **PipeWire Service** – Audio/video interface via WirePlumber (C#/JavaScript)
+- **ScreenCopy Service** – Capture screen frames (C#/JavaScript)
+- **Cava Service** – Audio visualizer support via CAVA (C#/JavaScript)
+- **PowerProfiles Service** – Manage CPU power profiles (C#/JavaScript)
+- **Gaming Service** – Game mode and performance tuning (C#/JavaScript)
+- **DiscordRPC Service** – Integration with Discord Rich Presence (C#/JavaScript)
+- **FileSystems Service** – Access mount points and disk info (C#/JavaScript)
+- **Screenshot Service** – Take screenshots (C#/JavaScript)
+- **Clipboard Service** – Manage clipboard content (C#/JavaScript)
+- **DConf Service** – Read/write GNOME DConf settings (C#/JavaScript)
+- **NHyprPm Service** – Power manager for Hyprland (C#/JavaScript)
+
+### 🛠 Scripting & UI Support
+
+- **Utils** – Helper functions and utilities (C#/JavaScript)
+- **BabelNTypes Support** – TypeScript + Babel support for JS developers
+- **XAML GTK Support** – Write UI in XAML when using .NET (C# only)
+
+### 🧩 .NET Runtime Integration
+
+Includes access to **all .NET runtime types** for maximum flexibility.
