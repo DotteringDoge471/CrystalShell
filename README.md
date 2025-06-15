@@ -56,7 +56,7 @@ CrystalShell provides a wide range of services and bindings for building fully f
 - **Hyprland Bindings** – Integrate with Hyprland compositor (C#/JavaScript)
 - **Wayfire Config Manager** – Manage Wayfire configuration files (C#/JavaScript)
 - **DBus Library** – High-level DBus bindings (C#/JavaScript)
-- **Astal4 Compatibility Layer** – Use Astal libraries in CrystalShell (C#/JavaScript)
+- **Astal4 Compatibility Layer** – Use `libastal` with GTK4 in CrystalShell (C#/JavaScript)
 - **SocketIO Library** – Real-time communication via Socket.IO (C#/JavaScript)
 - **Cryptography Library** – Hashing, encryption, and secure storage (C#/JavaScript)
 - **MonoPosix Bindings** – Access POSIX-level APIs (C#/JavaScript)
@@ -83,7 +83,7 @@ CrystalShell provides a wide range of services and bindings for building fully f
 - **Screenshot Service** – Take screenshots (C#/JavaScript)
 - **Clipboard Service** – Manage clipboard content (C#/JavaScript)
 - **DConf Service** – Read/write GNOME DConf settings (C#/JavaScript)
-- **NHyprPm Service** – Power manager for Hyprland (C#/JavaScript)
+- **NHyprPm Service** – `hyprpm` Wrapper (C#/JavaScript)
 
 ### 🛠 Scripting & UI Support
 
