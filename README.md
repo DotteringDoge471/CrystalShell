@@ -94,3 +94,8 @@ CrystalShell provides a wide range of services and bindings for building fully f
 ### 🧩 .NET Runtime Integration
 
 Includes access to **all .NET runtime types** for maximum flexibility.
+
+## Project Structure
+
+- **CrystalShell** – The core framework for building custom desktop shells  
+- **CrystalShell.Gtk4LayerShell** – C# bindings for the `gtk4-layer-shell` library

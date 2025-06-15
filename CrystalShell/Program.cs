@@ -1,11 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Gio;
+using Gtk;
+using Application = Adw.Application;
 
-var application = Gtk.Application.New("org.gir.core", Gio.ApplicationFlags.FlagsNone);
+var application = Application.New("org.crystalshell.main", ApplicationFlags.FlagsNone);
 application.OnActivate += (sender, args) =>
 {
-    var window = Gtk.ApplicationWindow.New((Gtk.Application) sender);
-    window.Title = "Gtk4 Window";
+    var label = Label.New("Hello world");
+    var window = ApplicationWindow.New((Application)sender);
+    window.Title = "Window";
     window.SetDefaultSize(300, 300);
+    window.SetChild(label);
     window.Show();
 };
 return application.RunWithSynchronizationContext(null);
